@@ -17,7 +17,7 @@ public class UserInputActivity extends AppCompatActivity {
     EditText animals;
     EditText game;
 
-    Button button;
+    private Button genButton;
     String[] words = new String[6];
     ArrayList<EditText> editTexts = new ArrayList<>();
 
@@ -38,9 +38,9 @@ public class UserInputActivity extends AppCompatActivity {
         game = (EditText)findViewById(R.id.game);
         editTexts.add(game);
 
-        button = (Button) findViewById(R.id.completeButt);
+        genButton = (Button) findViewById(R.id.completeButt);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        genButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(UserInputActivity.this, MadLibActivity.class);
@@ -53,9 +53,12 @@ public class UserInputActivity extends AppCompatActivity {
                     }else{
                         words[i]=temp;
                     }
-                    if(canContinue){
-                        myIntent.putExtra("userInput", words);
-                    }
+
+                }
+                if(canContinue){
+                    myIntent.putExtra("userInput", words);
+                    startActivity(myIntent);
+                    game.
                 }
 
             }

@@ -23,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/adj0"
         android:paddingTop="10sp"
-        android:layout_marginTop="5sp"
         android:hint="Adjective" />
     <EditText
         android:id="@+id/noun0"
@@ -31,7 +30,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/adj1"
         android:paddingTop="10sp"
-        android:layout_marginTop="5sp"
         android:hint="Noun" />
     <EditText
         android:id="@+id/noun1"
@@ -39,7 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/noun0"
         android:paddingTop="10sp"
-        android:layout_marginTop="5sp"
         android:hint="Noun" />
     <EditText
         android:id="@+id/animals"
@@ -47,7 +44,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/noun1"
         android:paddingTop="10sp"
-        android:layout_marginTop="5sp"
         android:hint="Animal(Plural)" />
     <EditText
         android:id="@+id/game"
@@ -55,14 +51,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/animals"
         android:paddingTop="10sp"
-        android:layout_marginTop="5sp"
         android:hint="Game" />
 
     <Button
         android:id="@+id/completeButt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/game"
         android:text="Generate Mad Lib using above words"/>
 
 </RelativeLayout>
