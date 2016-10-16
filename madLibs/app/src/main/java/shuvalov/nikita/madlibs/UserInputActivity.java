@@ -58,7 +58,6 @@ public class UserInputActivity extends AppCompatActivity {
                 if(canContinue){
                     myIntent.putExtra("userInput", words);
                     startActivity(myIntent);
-                    game.
                 }
 
             }
